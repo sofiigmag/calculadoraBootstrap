@@ -12,23 +12,62 @@
             align-items: center;
             justify-content: center;
         }
+        .btn{
+            margin:4px;
+        }
+        .calculadora{
+            min-width: 200px;
+
+        }
     </style>
 </head>
 <body>
     <main class ="cont-general vh-100 min-flex">
         <div class="sub-general container bg-danger">
-            <div class="row bg-primary">
+            <div class="row bg-primary min-flex">
                 <div class="header">
                     <h1>Calculadora HTML y JS</h1>
                 </div>
             </div>
             <div class="row bg-success min-flex">
+                <div></div>
                 <div class="cont-calculadora container col-8 bg-dark">
-                    <div class="cont-display">
+                    <div class=" row cont-display">
                         <div class="display text-white">
                             <div id="valor-anterior">100+</div>
                             <div id="valor-actual">10</div>
                         </div>
+                    </div>
+
+                    <div class="row bg-primary min-flex">
+                        <button class="btn btn-secondary col-2">C</button>
+                        <button class="btn btn-secondary col-2">&larr;</button>
+                        <button class="btn btn-dark col-2">^</button>
+                        <button class="btn btn-dark col-2">√x</button>
+                    </div>
+                    <div class="row bg-primary min-flex">
+                        <button class="btn btn-light col-2">7</button>
+                        <button class="btn btn-light col-2">8</button>
+                        <button class="btn btn-light col-2">9</button>
+                        <button class="btn btn-dark col-2">%</button>
+                    </div>
+                    <div class="row bg-primary min-flex">
+                        <button class="btn btn-light col-2">6</button>
+                        <button class="btn btn-light col-2">5</button>
+                        <button class="btn btn-light col-2">4</button>
+                        <button class="btn btn-dark col-2">x</button>
+                    </div>
+                    <div class="row bg-primary min-flex">
+                        <button class="btn btn-light col-2">3</button>
+                        <button class="btn btn-light col-2">2</button>
+                        <button class="btn btn-light col-2">1</button>
+                        <button class="btn btn-dark col-2">-</button>
+                    </div>
+                    <div class="row bg-primary min-flex">
+                        <button class="btn btn-light col-2">0</button>
+                        <button class="btn btn-light col-2">.</button>
+                        <button class="btn btn-light col-2">=</button>
+                        <button class="btn btn-dark col-2">+</button>
                     </div>
                 </div>
             </div>
