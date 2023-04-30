@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .btn{
-    margin: 4px;
+    margin:4px;
     padding: 4px;
     box-shadow: 0px 2px 0px 1px #02020c7e;
 }
@@ -30,7 +30,7 @@
 }
 
 #valor-anterior{
-    color: gray;
+    color:gray;
     font-size: 18px;
 }
 

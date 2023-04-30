@@ -7,24 +7,25 @@ class Display{
         this.valorActual = '';
         this.valorAnterior = '';
         this.signos = {
-            sumar: '+',
-            restar: '-',
-            dividir: '/',
-            multiplicar: '*',
-            potenciar: '**'
-        }
-        this.advancedSignos = {
-            raiz: '√'
-            //Agregar mas funciones
-        }
+                sumar: '+',
+                restar: '-',
+                dividir: '/',
+                multiplicar: '*',
+                potenciar: '**'
+            }
+            this.advancedSignos = {
+                raiz: '√'
+                //Agregar mas funciones
+            }
     }
-
+    
     addNumber(numero){
         if (numero === '.' && this.valorActual.includes('.')) return
         this.valorActual = this.valorActual.toString() + numero.toString();
         this.printValues();
     }
-
+ 
+ 
     printValues(){
         this.displayValorActual.textContent = this.valorActual;
         this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.operador] || this.advancedSignos[this.operador] || ''}`;
@@ -41,6 +42,7 @@ class Display{
         this.operador = undefined;
         this.printValues();
     }
+
     computar(tipo){
         this.operador !== 'igual' && this.calcular(this.verificador);
         this.operador = tipo;
@@ -63,4 +65,6 @@ class Display{
             this.valorActual = this.calculadora[this.funcion](this.valorAnterior, this.valorActual, this.operacion);
         }
     }
-}
+ }   
+ 
+
